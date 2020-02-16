@@ -257,7 +257,7 @@ visualize.draw_boxes(rgb_img, boxes=positive_anchors, refined_boxes=refined_anch
 ```
 
 
-![png](inspect_model_files/inspect_model_12_0.png)
+![png](./AI-Bootcamp-Demo/inspect_model_files/inspect_model_12_0.png)
 
 
 ### 1.b RPN Predictions
@@ -302,7 +302,7 @@ visualize.draw_boxes(rgb_img, boxes=model.anchors[sorted_anchor_ids[:limit]], ax
 ```
 
 
-![png](inspect_model_files/inspect_model_15_0.png)
+![png](./AI-Bootcamp-Demo/inspect_model_files/inspect_model_15_0.png)
 
 
 
@@ -319,7 +319,7 @@ visualize.draw_boxes(rgb_img, refined_boxes=refined_anchors_clipped[:limit], ax=
 ```
 
 
-![png](inspect_model_files/inspect_model_16_0.png)
+![png](./AI-Bootcamp-Demo/inspect_model_files/inspect_model_16_0.png)
 
 
 
@@ -331,7 +331,7 @@ visualize.draw_boxes(rgb_img, refined_boxes=refined_anchors_clipped[ixs], ax=get
 ```
 
 
-![png](inspect_model_files/inspect_model_17_0.png)
+![png](./AI-Bootcamp-Demo/inspect_model_files/inspect_model_17_0.png)
 
 
 
@@ -346,7 +346,7 @@ visualize.draw_boxes(rgb_img, refined_boxes=proposals, ax=get_ax())
 ```
 
 
-![png](inspect_model_files/inspect_model_18_0.png)
+![png](./AI-Bootcamp-Demo/inspect_model_files/inspect_model_18_0.png)
 
 
 ### 2.a Proposal Classification
@@ -400,7 +400,7 @@ visualize.draw_boxes(
     
 
 
-![png](inspect_model_files/inspect_model_22_1.png)
+![png](./AI-Bootcamp-Demo/inspect_model_files/inspect_model_22_1.png)
 
 
 ### 2.c Step by Step Detection
@@ -446,7 +446,7 @@ visualize.draw_boxes(rgb_img, boxes=proposals[ixs],
 ```
 
 
-![png](inspect_model_files/inspect_model_25_0.png)
+![png](./AI-Bootcamp-Demo/inspect_model_files/inspect_model_25_0.png)
 
 
 #### Apply Bounding Box Refinement
@@ -481,7 +481,7 @@ visualize.draw_boxes(rgb_img, boxes=proposals[roi_positive_ixs][ids],
     
 
 
-![png](inspect_model_files/inspect_model_27_1.png)
+![png](./AI-Bootcamp-Demo/inspect_model_files/inspect_model_27_1.png)
 
 
 #### Filter Low Confidence Detections
@@ -563,7 +563,7 @@ visualize.draw_boxes(
 ```
 
 
-![png](inspect_model_files/inspect_model_33_0.png)
+![png](./AI-Bootcamp-Demo/inspect_model_files/inspect_model_33_0.png)
 
 
 ## Stage 3: Generar Masks
@@ -579,7 +579,7 @@ display_images(np.transpose(r['masks'], [2, 0, 1]), cmap="Blues")
 ```
 
 
-![png](inspect_model_files/inspect_model_36_0.png)
+![png](./AI-Bootcamp-Demo/inspect_model_files/inspect_model_36_0.png)
 
 
 ### 3.b  Masks predecidas
@@ -628,7 +628,7 @@ display_images(det_mask_specific[:4] * 255, cmap="Blues", interpolation="none")
 ```
 
 
-![png](inspect_model_files/inspect_model_40_0.png)
+![png](./AI-Bootcamp-Demo/inspect_model_files/inspect_model_40_0.png)
 
 
 
@@ -637,7 +637,7 @@ display_images(det_masks[:4] * 255, cmap="Blues", interpolation="none")
 ```
 
 
-![png](inspect_model_files/inspect_model_41_0.png)
+![png](./AI-Bootcamp-Demo/inspect_model_files/inspect_model_41_0.png)
 
 
 
