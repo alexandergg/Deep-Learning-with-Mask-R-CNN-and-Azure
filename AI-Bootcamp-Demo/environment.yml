@@ -1,0 +1,24 @@
+name: maskrcnn
+dependencies:
+- python=3.5
+
+- pip:
+  - azureml-defaults
+  - h5py==2.8.0
+  - html5lib==1.0.1
+  - keras==2.2.0
+  - Keras-Applications==1.0.2
+  - Keras-Preprocessing==1.0.1
+  - matplotlib==2.2.2
+  - numpy==1.14.5
+  - opencv-python==3.3.0.9
+  - pandas==0.23.3
+  - Pillow==5.2.0
+  - requests==2.19.1
+  - scikit-image==0.14.0
+  - scikit-learn==0.19.2
+  - scipy==1.1.0
+  - sklearn==0.0
+  - tensorflow==1.9.0
+  - urllib3==1.23
+  - azureml-sdk

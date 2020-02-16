@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="Expires" content="0">
+      <meta http-equiv="Last-Modified" content="0">
+      <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+      <meta http-equiv="Pragma" content="no-cache">
+    <title>Tensorflow Mask-RCNN detector of skin tumours</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:700|Merriweather:300,300italic,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/jquery/jquery.fileupload.css">
+    <link rel="stylesheet" href="/static/css/screen.css">
+    <script src="/static/js/jquery/jquery-3.1.1.min.js"></script>
+    <script src="/static/js/jquery/jquery.ui.widget.js"></script>
+    <script src="/static/js/jquery/jquery.iframe-transport.js"></script>
+    <script src="/static/js/jquery/jquery.fileupload.js"></script>
+    <script src="/static/js/progressbar/progressbar.min.js"></script>
+    <script src="/static/js/scrollreveal/scrollreveal.min.js"></script>
+    <script src="/static/js/screen.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <header>
+            <img src="/static/img/logo.png"/>
+            <br>
+            <h1>Skin tumours detection</h1>  
+          </header>
+        </div>
+      </div>
+      <div class="container wow fadeInUp" style="visibility: visible; animation-name: fadeInUp; padding-top: 1%; padding-bottom: 10%">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="section-title">
+                <i class="fa fa-atom fa-3x" style="color: #ff320e;"></i>
+              <h2>Service Flow</h2>
+              <h3>This is a skin tumours detector, which determines thanks Mask-RCNN if a skin wart is "Malignant" or "Benign"</h3>
+            </div>
+        </div>
+          <img src="/static/img/aml.png" class="center process_desc"/>
+      </div>
+      <div class="reveal">
+        <div class="container wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+          <div class="col-md-6 col-md-offset-3">
+            <div class="section-title">
+              <i class="fa fa-database fa-3x" style="color: #ff320e;"></i>
+              <h2>Example of images</h2>
+              <h3>The dataset ISIC-Archive help us to detect with descriptions if a wart image is MALIGNANT or BENIGN</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="reveal">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="painting-box">
+                  <img src="/static/img/ISIC_0000145.jpg" class="img-painting image"/>
+                  <div class="btn-box">
+                      <h6>Benign</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="painting-box">
+                  <img src="/static/img/ISIC_0000156.jpg" class="img-painting image"/>
+                  <div class="btn-box">
+                    <h6>Malignant</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="container">
+          <div class="col-md-6 col-md-offset-3">
+              <div class="section-title">
+                  <i class="fas fa-rocket fa-3x" style="color: #ff320e;"></i>
+                  <h2>Upload your file</h2>
+              </div>
+              <div class="form-group file">
+                <input id="fileupload" name="file" type="file" accept="image/jpeg" multiple="">
+              </div>  
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="reveal">
+            <div class="section-title-show">
+              <h3>File Upload</h3>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <div id="progress" class="progress">
+                  <div class="progress-bar progress-bar-success"></div>
+                </div>
+                <div id="files" class="files"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="reveal">
+            <div class="section-title-show">
+              <h3>Detection Result</h3>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <div id="result"></div>
+                <div id="confidence"></div>
+                <div id="painting-box" class="painting-box"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
