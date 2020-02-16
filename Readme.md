@@ -15,7 +15,7 @@
 3. Run [lab02.ipynb](./AI-Bootcamp-Demo/inspect_model.ipynb) to learn about Mask R-CNN model.
 
 
-# Mask R-CNN - Analisis modelo entrenamiento
+# Mask R-CNN - Training model analysis
 
 AI-Bootcamp DEMO
 
