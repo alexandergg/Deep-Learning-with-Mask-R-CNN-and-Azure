@@ -10,8 +10,9 @@
 4. Active Azure Subscription
 
 ## Local
-Download model from https://drive.google.com/open?id=1GCxDTyAB3IHFE6xVVyJPOAXwssyFC9Qx
-Run [lab02.ipynb](./AI-Bootcamp-Demo/inspect_model.ipynb) to learn about Mask R-CNN model.
+1. Download model mask_rcnn_090.h5 and mask_rcnn_coco.h5 from https://drive.google.com/open?id=1GCxDTyAB3IHFE6xVVyJPOAXwssyFC9Qx
+2. Download mask_rcnn_090.h5 on ./Models and mask_rcnn_coco.h5 on ./Mask folder.
+3. Run [lab02.ipynb](./AI-Bootcamp-Demo/inspect_model.ipynb) to learn about Mask R-CNN model.
 
 
 # Mask R-CNN - Analisis modelo entrenamiento
