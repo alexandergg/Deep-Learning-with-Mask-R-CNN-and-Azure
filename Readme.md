@@ -1,5 +1,5 @@
 # [Global AI Bootcamp Spain 2018 Content](https://globalaibootcamp-madrid.azurewebsites.net/)
-# Deep Learning and Azure - Image segmenatation and classification with Mask R-CNN
+# Deep Learning and Azure - Image segmentation and classification with Mask R-CNN
 ## Requirements
 1. Ananconda and Jupyter Notebook Local
     - Instalation: https://www.anaconda.com/distribution/
