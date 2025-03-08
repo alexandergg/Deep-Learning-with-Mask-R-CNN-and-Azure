@@ -16,6 +16,6 @@ sklearn==0.0
 tensorflow==1.9.0
 urllib3==1.23
 gunicorn==19.7
-flask==0.12.2
+flask==1.0
 flask-cors==3.0.3
 azureml-sdk
